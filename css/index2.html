@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position property</title>
+
+    <style>
+        img{
+            margin: 20px;
+        }
+        div{
+            border: 2px solid black;
+        }
+        .img2{
+            /* top: 100px;
+            position: relative; */
+            position: absolute;
+            top: 200px;
+        }
+        .container{
+            position: relative;
+            height: 2000px;
+            background-color: bisque;
+        }
+        .img4{
+            position: fixed;
+        }
+        .img3{
+            position: sticky;
+            top: 100px;
+        }
+        .box{
+            background-color: aquamarine;
+            height: 3000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="iphone.png" alt="pagal"
+            width="500px"
+            height="400px"
+            class="img1"/>
+
+            <img src="lamp.jpeg" alt="pagal"
+            width="300px"
+            height="400px"
+            class="img2"
+            
+            />
+
+            <img src="lappy.jpeg" alt="pagal"
+            width="450px"
+            height="400px"
+            class="img3"
+            />
+
+            <img src="pillow.jpeg" alt="pagal"
+            width="450px"
+            height="400px"
+            class="img4"
+            />
+    </div>
+
+    <div class="box">
+
+
+    </div>
+    
+</body>
+</html>
