@@ -3,14 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid Responsive Design</title>
+    <title>Grids Advanced</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+        }
         .container{
             display: grid;
             gap: 1rem;
+            padding: 4rem;
+            background-color: rgb(71,65,65);
+            width: 100%;
+            height: 100%;
+            grid-template-columns: repeat(auto-fit,minmax(10px,300px));
+            justify-content: center;
         }
         .item{
-
+            padding: 1rem;
+            border: 3px solid black;
+            background-color: rgb(85,85,208);
+            color: aliceblue;
         }
     </style>
 </head>
@@ -25,13 +43,7 @@
         <div class="item">G</div>
         <div class="item">H</div>
         <div class="item">I</div>
-        <div class="item">J</div>
         <div class="item">K</div>
-        <div class="item">L</div>
-        <div class="item">M</div>
-        <div class="item">N</div>
-        <div class="item">O</div>
-        <div class="item">P</div>
-    </div>    
+    </div>
 </body>
 </html>
